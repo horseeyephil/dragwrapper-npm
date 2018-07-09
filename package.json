@@ -1,0 +1,35 @@
+{
+  "name": "dragwrapper",
+  "version": "1.0.1",
+  "description": "A lightweight higher-order function that can take any React class component and make it draggable.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "babel src/lib -d lib --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drag",
+    "draggable",
+    "component",
+    "wrapper",
+    "higherorder",
+    "react",
+    "drop",
+    "lightweight"
+  ],
+  "author": "Philip Gingerich",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "babel-loader": "^7.1.4"
+  }
+}
