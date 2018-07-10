@@ -110,7 +110,7 @@ const dragMaker = (providedPosition, providedCB, dragStartCB, dragDuringCB) => {
             draggableNode.addEventListener('drag', this.dragFunction)
             draggableNode.addEventListener('dragstart', this.dragStartFunction)
               
-            if(providedCB) draggableNode.addEventListener('dragend', providedCB)
+            if(providedCB) draggableNode.addEventListener('dragend', event=>{event.stopPropagation(); providedCB(event)})
         }
 
         render(){

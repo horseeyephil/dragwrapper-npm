@@ -3,9 +3,15 @@
   "version": "1.0.1",
   "description": "A lightweight higher-order function that can take any React class component and make it draggable.",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horseeyephil/dragwrapper-npm"
+  },
   "scripts": {
     "lib": "babel src/lib -d lib --copy-files",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lib:watch": "babel src/lib -w -d lib --copy-files",
+    "docs": "webpack-dev-server --mode development",
+    "docs:prod": "webpack --mode production"
   },
   "keywords": [
     "drag",
@@ -30,6 +36,15 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
-    "babel-loader": "^7.1.4"
+    "@babel/register": "^7.0.0-beta.52",
+    "babel-loader": "^8.0.0-beta.4",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.3"
   }
 }
