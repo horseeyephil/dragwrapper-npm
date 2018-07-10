@@ -1,6 +1,6 @@
 {
   "name": "dragwrapper",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "A lightweight higher-order function that can take any React class component and make it draggable.",
   "main": "lib/index.js",
   "repository": {
