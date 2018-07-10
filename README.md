@@ -35,6 +35,8 @@ export const nowDraggableWithinContainer = dragwrapper('absolute', ()=>{console.
 export const nowDraggableAcrossScreen = dragwrapper('fixed', null, ()=>{console.log('I\'m being dragged!')})(SomethingIWantToDrag)
 ```
 
+![demo](dragwrapper-demo.png)
+
 ### To try the demo:
 
 Clone the repo
